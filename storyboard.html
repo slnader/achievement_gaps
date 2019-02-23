@@ -1,0 +1,509 @@
+<html lang="en">
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Achievement Gaps Storyboard</title>
+
+    <!-- Bootstrap core CSS -->
+ <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/storyboard.css" rel="stylesheet">
+
+    <!-- Jquery CSS -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://cepa.stanford.edu/educational-opportunity-monitoring-project">The Educational Opportunity Monitoring Project</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="starter-template">
+      <div class="row">
+        <h1>Racial and Ethnic Achievement Gaps</h1>
+        <p class="lead">
+            Racial and ethnic inequality in education has a long and persistent history in the United States. Beginning in 1954, however, when the Supreme Court ruled in Brown v. Board of Education that racial segregation of public schools was unconstitutional, some progress has been made in improving racial educational disparities. But that progress has been slow, uneven, and incomplete.
+        </p>
+        <p class="lead">
+            One key set of measures of racial educational equality are racial achievement gaps—differences in the average standardized test scores of white and black or white and Hispanic students. Achievement gaps are one way of monitoring the equality of educational outcomes.
+        </p>
+        <p class="lead">
+            The series of figures below describe recent trends and patterns in racial achievement gaps.
+        </p>
+        <hr>
+      </div>
+      <div class="row">
+          <p class="table-contents">
+              Page contents
+          </p>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+              <a href="#first" class="button-link contents">
+                  <button type="button" class ="btn btn-default btn-block btn-sm contents">National achievement gap trends</button></a>
+          </div>
+          <div class="col-md-4">
+              <a href="#second" class="button-link contents">
+                  <button type="button" class ="btn btn-default btn-block btn-sm contents">National achievement trends</button></a>
+          </div>
+          <div class="col-md-4" class="button-link contents">
+              <a href="#third" class="button-link contents">
+                  <button type="button" class ="btn btn-default btn-block btn-sm contents">State achievement gaps</button></a>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-4">
+          <a href="#fourth" class="button-link">
+              <button type="button" class ="btn btn-default btn-block btn-sm contents">State achievement gap trends</button></a>
+          </div>
+          <div class="col-md-4">
+              <a href="#fifth" class="button-link contents">
+                  <button type="button" class ="btn btn-default btn-block btn-sm contents">State gaps and socioeconomic disparities</button></a>
+          </div>
+          <div class="col-md-4">
+          <a href="#sixth" class="button-link contents">
+              <button type="button" class ="btn btn-default btn-block btn-sm contents">Actual and predicted gaps</button></a>
+          </div>
+      </div>
+
+        <div class="row" id="first">
+            <h3>
+                Over the past 40 years, white-black and white-Hispanic achievement gaps have been declining, albeit unsteadily.
+            </h3>
+            <p>
+                Every few years, a sample of 9-, 13-, and 17-year-olds from around the United States are given tests in math and reading as part of the <a href="http://nces.ed.gov/nationsreportcard/ltt" target="_blank">National Assessment of Educational Progress</a>  (NAEP). NAEP, sometimes called "The Nation’s Report Card," is designed to provide the public and policymakers with an objective assessment of the math and reading skills of American children. Because NAEP has used the same tests since the 1970s, we can use it to compare the reading and math skills of children today with those of their parents’ generation. We can also use NAEP to examine trends in the white-black and white-Hispanic achievement gaps. These trends are illustrated in the figure below.
+            </p>
+           <p>
+               White-black and white-Hispanic achievement gaps have, in general, narrowed substantially since the 1970s in all grades and in both math and reading. The gaps narrowed sharply in the 1970s and the first half of the 1980s, but then progress stalled. In fact, some of the achievement gaps grew larger in the late 1980s and the 1990s. Since the 1990s, however, achievement gaps in every grade and subject have been declining. As of 2012, the white-black and white-Hispanic achievement gaps were 30-40&#37; smaller than they were in the 1970s. Nonetheless, the gaps are still very large, ranging from 0.5 to 0.9 standard deviations.
+           </p>
+        </div>
+      <div class="row"><span class="glyphicon glyphicon-question-sign"></span>
+          <a href="#help_1" data-toggle="modal" data-target="#help_1">
+              <span class="help-text">How to read this figure</span></a></div>
+        <div class="row">
+            <a href="#second" class="button-link">
+                <button type="button" class ="btn btn-default btn-sm" id="next">
+                    <span class="glyphicon glyphicon-arrow-down"></span>
+                    Next</button></a>
+        </div>
+      <div class="row">
+          <div class="col-md-1">&nbsp;</div>
+          <div class="col-md-10 svg-line-container" id="national_gap_container"></div>
+          <div class="col-md-1">&nbsp;</div>
+      </div>
+
+      <!-- Help Modal -->
+      <div class="modal fade" id="help_1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">How to read this figure</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          Each line in the figure shows the trend in the achievement gap in math or reading for a specific pair of racial/ethnic groups (white-black or white-Hispanic) at a particular age (9-, 13-, or 17-years-old). The achievement gaps are measured in standard deviation units (for more information on how the gaps are computed, see <a href="data/EOMP racial and ethnic achievement gaps data and methods.pdf" target="_blank">here</a>). The trend lines are smoothed from the gaps estimated in various years. Holding the mouse over a line will reveal the underlying data from which the smooth curve was estimated. The bars around each annual estimate indicate the 95&#37; confidence intervals for each year’s estimated achievement gap. Although the achievement gap in any one year is estimated with some uncertainty, the general pattern evident in the trends is clear.
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row" id="second">
+            <h3>
+                Achievement gaps have been narrowing because Black and Hispanic students’ scores have been rising faster than those of White students.
+            </h3>
+        <p>
+            Achievement gaps have been closing because Black and Hispanic students’ scores have improved very rapidly over the last 30 years. Indeed, among Black and Hispanic students, the average 9-year-old student today scores almost as well on the NAEP math tests as the average 13-year-old did in 1978; the average 13-year old today scores almost as well as the average 17-year-old in 1978. In other words, black and Hispanic students today are roughly three years ahead of their parents’ generation in math skills. In reading, they are roughly two to three years ahead of their parents. White students’ scores have also improved, but not by as much. These trends are illustrated in the figure below.
+        </p>
+        </div>
+      <div class="row">
+          <span class="glyphicon glyphicon-question-sign"></span>
+          <a href="#help_2" data-toggle="modal" data-target="#help_2">
+              <span class="help-text">How to read this figure</span></a>
+      </div>
+        <div class="row">
+            <div class="col-sm-6">
+            <a href="#first" class="button-link">
+                <button type="button" class ="btn btn-default btn-sm" id="back">
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                    Back</button></a>
+            </div>
+            <div class="col-sm-6">
+            <a href="#third" class="button-link">
+             <button type="button" class ="btn btn-default btn-sm" id="next">
+                 <span class="glyphicon glyphicon-arrow-down"></span>
+                 Next</button></a>
+            </div>
+        </div>
+        <div class="row">
+              <div class="col-xs-6" id="grade_2"></div>
+              <div class="col-xs-6" id="subject_2"></div>
+         </div>
+         <div class="row">
+             <div class="col-md-1">&nbsp;</div>
+             <div class="col-md-10 svg-line-container" id="national_score_container"></div>
+             <div class="col-md-1">&nbsp;</div>
+         </div>
+
+      <!-- Help Modal -->
+      <div class="modal fade" id="help_2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">How to read this figure</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          For each subject and age group, the figure displays three lines, each of which shows the trend in the average NAEP scores for white, black, or Hispanic students. The vertical axis shows NAEP scores. To help interpret these scores, the horizontal lines indicate the type of skills that students must demonstrate to score at various levels (more detailed information on the NAEP performance levels is available <a href="http://nces.ed.gov/nationsreportcard/ltt/performance-levels.aspx" target="_blank">here</a>). Each line’s label (on the right) indicates the overall change in average scores for that group since the first NAEP test shown (in the 1970s).
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row" id="third">
+          <h3>
+              Achievement gaps in some states are larger than in others.
+          </h3>
+          <p>
+              The white-black and white-Hispanic achievement gaps vary considerably among states. This is evident in the figures below, which show state-level achievement gaps for the years 1990-2013. These gaps are estimated from a version of the NAEP tests (called <a href= "http://nces.ed.gov/nationsreportcard/about/state.aspx" target="_blank">Main NAEP</a>") that has been given to samples of students in each state every two years since 2003 and in some states from as early as 1990.
+          </p>
+          <p>
+              In some states, particularly those in the upper Midwest, like Wisconsin, Michigan, Illinois, and Minnesota, the white-black achievement gap has generally been larger than a standard deviation over the last decade, regardless of grade or subject. Some other states, like Connecticut and Nebraska, also have white-black gaps this large, as does the District of Columbia, where the gap is well over 1.5 standard deviations. In states with small black populations, like West Virginia, Hawaii, Idaho, Wyoming, Montana, Vermont, and New Hampshire, for example, the gaps are consistently smaller, typically only half as large as in the states with the largest gaps.
+          </p>
+          <p>
+              The same is true of the white-Hispanic achievement gaps. In some states, most notably the New England states of Connecticut, Massachusetts, and Rhode Island, but also in California, Colorado, Minnesota, and in the District of Columbia, the white-Hispanic gap is quite large, on the order of 0.90 to 1.00 standard deviations (or 1.5 standard deviations in the District of Columbia). In West Virginia and Vermont, however, the gaps only 0.30 or smaller, only one-third the size as in the states with the largest gaps.
+          </p>
+          <p>
+              In some cases, the gaps are large because white students in these states score particularly high on the NAEP tests; in other cases, the gaps are large because black or Hispanic students score poorly. For example, the large white-Hispanic gap in California is largely due to the low average scores of California Hispanic students (who have among the lowest average scores in the country in math or reading), not the high performance of white students (who perform at roughly the average among white students nationally). Conversely, the large white-black gap in Minnesota is not due to black Minnesota students’ particularly low scores (they are near or slightly below the national average), but is due to the fact that white students in Minnesota have very high scores.
+          </p>
+       </div>
+      <div class="row">
+          <span class="glyphicon glyphicon-question-sign"></span>
+          <a href="#help_3" data-toggle="modal" data-target="#help_3">
+              <span class="help-text">How to read this figure</span></a>
+      </div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <a href="#second" class="button-link">
+                      <button type="button" class ="btn btn-default btn-sm" id="back">
+                          <span class="glyphicon glyphicon-arrow-up"></span>
+                          Back</button></a>
+              </div>
+              <div class="col-sm-6">
+                  <a href="#fourth" class="button-link">
+                      <button type="button" class ="btn btn-default btn-sm" id="next">
+                          <span class="glyphicon glyphicon-arrow-down"></span>
+                          Next</button></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-2" id="sort_3"></div>
+              <div class="col-md-2" id="gap_3"></div>
+              <div class="col-md-2" id="grade_3"></div>
+              <div class="col-md-2" id="subject_3"></div>
+              <div class="col-md-offset-1" id="highlight_3"></div>
+          </div>
+          <div class="row time" id="time_3"></div>
+          <div class="row current-year" id="current-year_3"></div>
+         <div class="row">
+             <div class="col-md-6">
+                 <div class="svg-legend-container" id="bar-legend_3"></div>
+                 <div class="svg-container" id="state_levels"></div>
+             </div>
+             <div class="col-md-6">
+                 <div id="gap_legend_3"> </div>
+                 <div class="svg-map-container" id="gap_container_3"> </div>
+             </div>
+         </div>
+
+      <!-- Help Modal -->
+      <div class="modal fade" id="help_3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">How to read this figure</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          Select a gap (white-black or white-Hispanic), a grade (4th or 8th), and a test subject (math or reading) from the pull-down menus. The slider can be used to select a year, or to scroll through years from 1990 to 2013, though gap estimates are not available for all states in all years, particularly from 1990-2002. To highlight a particular state in the figure, select it from the "Select state" pull-down menu.
+                      </p>
+                      <p>
+                          The map shows the size of the achievement gap in each state, for the selected group, grade, subject, and year, measured in <a href="data/EOMP racial and ethnic achievement gaps data and methods.pdf" target="_blank">standard deviation units</a>. NAEP is not administered in every year for every subject and grade; states without data for a particular year, subject, group, and grade combination are shaded in grey. In addition to the map, the figure to the left shows the average test scores for each group in each state. These average scores are measured on the Main NAEP score scale (which is slightly different than the NAEP scale in the figure above; information on the Main NAEP scales is <a href="http://nces.ed.gov/nationsreportcard/subjectareas.aspx" target="_blank">here</a>). On this figure, the states can be sorted, using the "Sort by" pull-down menu, to examine the relative performance of each state’s white, black, and Hispanic students.
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+
+      <div class="row" id="fourth">
+      <h3>
+          In the last two decades, racial achievement gaps have been narrowing in most states, but have widened in a small number of states.
+      </h3>
+      <p>
+          Although the white-black and white-Hispanic achievement gaps have been narrowing nationally over the last decade or more, the rate at which these gaps are changing varies among the states. The Main NAEP data provide repeated measures of the size of these achievement gaps in each of the states between 1990 and 2013.
+      </p>
+       <p>
+           On average, the within-state white-black achievement gaps have been narrowing at a rate of roughly 0.05 standard deviations per decade since 2003. The corresponding rate for white-Hispanic gaps is roughly 0.10 standard deviations per decade. Although the gaps are, on average, closing, they are doing so very slowly, compared to their current size.
+       </p>
+       <p>
+           Nonetheless, there are some states where the gaps are closing much more rapidly. In seven states (District of Columbia, New York, West Virginia, Louisiana, Arkansas, New Jersey, and Michigan) the white-black gaps are closing at a rate of at least 0.20 standard deviations per decade, four times the rate in the average state. The white-Hispanic gap has narrowed at this rate in 10 states, many of them Southern and Midwestern states with small but growing Hispanic populations (District of Columbia, Delaware, Georgia, Tennessee, Nebraska, Iowa, Illinois, Indiana, Arizona, and Michigan).
+       </p>
+       <p>
+           Likewise, many states that have seen no significant change from 2003-2013 in the white-black achievement gap (21 states) or the white-Hispanic gap (28 states). In only three states (Maine, Vermont, and Colorado) has the white-black gap increased significantly in the last decade. In only one has the white-Hispanic gap increased (West Virginia).
+       </p>
+       <p>
+           The figure below illustrates the trend in each state’s achievement gaps from 1990-2013.
+       </p>
+       </div>
+      <div class="row">
+          <span class="glyphicon glyphicon-question-sign"></span>
+          <a href="#help_4" data-toggle="modal" data-target="#help_4">
+              <span class="help-text">How to read this figure</span></a>
+      </div>
+          <div class="row">
+              <div class="col-sm-6">
+                  <a href="#third" class="button-link">
+                      <button type="button" class ="btn btn-default btn-sm" id="back">
+                          <span class="glyphicon glyphicon-arrow-up"></span>
+                          Back</button></a>
+              </div>
+              <div class="col-sm-6">
+                  <a href="#fifth" class="button-link">
+                      <button type="button" class ="btn btn-default btn-sm" id="next">
+                          <span class="glyphicon glyphicon-arrow-down"></span>
+                          Next</button></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-sm-3" id="gap_4"></div>
+              <div class="col-sm-3" id="grade_4"></div>
+              <div class="col-sm-3" id="subject_4"></div>
+              <div class="col-sm-3" id="highlight_4"></div>
+          </div>
+          <div class="row">
+              <div class="col-md-1">&nbsp;</div>
+              <div class="col-md-10 svg-line-container" id="state_trends"></div>
+              <div class="col-md-1">&nbsp;</div>
+          </div>
+
+      <!-- Help Modal -->
+      <div class="modal fade" id="help_4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">How to read this figure</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          Select a gap (white-black or white-Hispanic), a grade (4th or 8th), and a test subject (math or reading) from the pull-down menus. Each line in the figure shows the trend in this achievement gap for a given state. The achievement gaps are measured in standard deviation units (for more information on how the gaps are computed and what a standard deviation is, see <a href="data/EOMP racial and ethnic achievement gaps data and methods.pdf" target="_blank">here</a>). The trend lines are smoothed from the gaps estimated in various years. Holding the mouse over a line will reveal the underlying data from which the smooth curve was estimated. The bars around each annual estimate indicate the 95&#37; confidence intervals for each year’s estimated achievement gap. Although the achievement gap in any one year is estimated with some uncertainty, the general pattern evident in the trends is clear.
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row" id="fifth">
+              <h3>
+                  State racial achievement gaps are strongly correlated with state racial socioeconomic disparities.
+              </h3>
+              <p>
+                  One potential explanation for racial achievement gaps is that they are largely due to socioeconomic disparities between white, black, and Hispanic families. Black and Hispanic children’s parents typically have lower incomes and lower levels of educational attainment than white children’s parents. Because higher-income and more-educated families typically can provide more educational opportunities for their children, family socioeconomic resources are strongly related to educational outcomes. If racial socioeconomic disparities are the primary explanation for racial achievement gaps, we would expect achievement gaps to be largest in places where racial socioeconomic disparities are largest, and we would expect them to be zero in places where there is no racial socioeconomic inequality.
+              </p>
+          <p>
+              The figure below suggest this explanation is at least partly true. Achievement gaps are strongly correlated with racial gaps in income, poverty rates, unemployment rates, and educational attainment. When these four factors are combined into a single index of racial socioeconomic disparities, the correlation between state achievement gaps and state racial socioeconomic disparities is high: for white-black gaps the correlation is 0.61-0.68; for white-Hispanic gaps it is 0.83-0.86. A large part of the variation among states’ racial achievement gaps is attributable to variation in states’ racial socioeconomic disparities.
+          </p>
+          <p>
+              Nonetheless, even in states where the racial socioeconomic disparities are near zero (typically states with small black or Hispanic populations), achievement gaps are still present. This suggests that socioeconomic disparities are not the sole cause of racial achievement gaps.
+          </p>
+       </div>
+      <div class="row">
+          <span class="glyphicon glyphicon-question-sign"></span>
+          <a href="#help_5" data-toggle="modal" data-target="#help_5">
+              <span class="help-text">How to read this figure</span></a>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <a href="#fourth" class="button-link">
+                  <button type="button" class ="btn btn-default btn-sm" id="back">
+                      <span class="glyphicon glyphicon-arrow-up"></span>
+                      Back</button></a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#sixth" class="button-link">
+                  <button type="button" class ="btn btn-default btn-sm" id="next">
+                      <span class="glyphicon glyphicon-arrow-down"></span>
+                      Next</button></a>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-4" id="gap_5"></div>
+          <div class="col-sm-4" id="grade_5"></div>
+          <div class="col-sm-4" id="subject_5"></div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6" id="inequality_5"></div>
+          <div class="col-sm-6" id="highlight_5"></div>
+      </div>
+      <div class="row">
+        <div class="col-xs-9 svg-line-container" id="scatterplot_5"></div>
+          <div class="col-xs-3 svg-line-container" id="scatter-legend_5"></div>
+      </div>
+
+      <!-- Help Modal -->
+      <div class="modal fade" id="help_5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">How to read this figure</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          Select a gap (white-black or white-Hispanic), a grade (4th or 8th), and a test subject (math or reading) from the pull-down menus. Select a socioeconomic factor from the "Socioeconomic Disparity Measure " pull-down menu. The figure plots the chosen achievement gap (on the vertical axis) and socioeconomic disparity measure (on the horizontal axis) for each state. The line in each figure illustrates the average association between the two variables plotted : a line that slopes upward to the right indicates that states with larger white-minority socioeconomic disparities tend to have larger white-minority achievement gaps.
+                      </p>
+                      <p>
+                          The construction of each of the socioeconomic measures available is described <a href="data/EOMP racial and ethnic achievement gaps data and methods.pdf" target="_blank">here</a>. The "socioeconomic disparities index" is a composite of the other four measures (the racial income gap, education gap, poverty ratio, and unemployment ratio). Each of the measures is scaled so that the vertical axis is placed at the value corresponding to racial equality (i.e., a white-black income gap of 0 means that whites and blacks have equal incomes, on average; a white-black poverty ratio of 1 means that white and black families have equal poverty rates).
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="row" id="sixth">
+              <h3>
+                  Some states’ achievement gaps are higher or lower than would be predicted by their socioeconomic conditions alone.
+              </h3>
+          <p>
+              Despite the fact a state’s racial socioeconomic disparity is a very good predictor of its racial achievement gap (as is clear in the figure above), some states with similar levels of socioeconomic disparities have substantially different achievement gaps. For example, New Jersey and Wisconsin have very similar (and very high) levels of white-black socioeconomic disparities, but the white-black math achievement gap in Wisconsin is considerably larger (roughly 0.25 standard deviations larger) than in New Jersey. This suggests that socioeconomic disparities are not the sole cause of racial achievement gaps. Other factors—including potentially the availability and quality of early childhood education, the quality of public schools, patterns of residential and school segregation, and state educational and social policies—may play important roles in reducing or exacerbating racial achievement gaps.
+          </p>
+      </div>
+      <div class="row">
+          <span class="glyphicon glyphicon-question-sign"></span>
+          <a href="#help_6" data-toggle="modal" data-target="#help_6">
+              <span class="help-text">How to read this figure</span></a>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <a href="#fifth" class="button-link">
+                  <button type="button" class ="btn btn-default btn-sm" id="back">
+                      <span class="glyphicon glyphicon-arrow-up"></span>
+                      Back</button></a>
+          </div>
+          <div class="col-sm-6">
+              <a href="#first" class="button-link">
+                  <button type="button" class ="btn btn-default btn-sm" id="next">
+                      <span class="glyphicon glyphicon-repeat"></span>
+                      Top</button></a>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-2" id="sort_6"></div>
+          <div class="col-md-2" id="gap_6"></div>
+          <div class="col-md-2" id="grade_6"></div>
+          <div class="col-md-2" id="subject_6"></div>
+          <div class="col-md-offset-1" id="highlight_6"></div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <div class="svg-container" id="bar_chart_6"></div>
+          </div>
+          <div class="col-md-6">
+              <div id="gap_legend_6"></div>
+              <div class="svg-map-container" id="gap_container_6"></div>
+          </div>
+      </div>
+
+      <!-- Help Modal -->
+      <div class="modal fade" id="help_6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">How to read this figure</h4>
+                  </div>
+                  <div class="modal-body">
+                      <p>
+                          Select a gap (white-black or white-Hispanic), a grade (4th or 8th), and a test subject (math or reading) from the pull-down menus. The map and bar chart show how much larger or smaller the achievement gap in each state is than we would predict based on its racial socioeconomic disparities alone.  A value of 0.20, for example, indicates that a state’s achievement gap is 0.20 standard deviations larger than what we would predict based on the association between socioeconomic disparities and achievement gaps shown in the figure above.  More detail on how these values were computed is <a href="data/EOMP racial and ethnic achievement gaps data and methods.pdf" target="_blank">here</a>.
+                      </p>
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      </div>
+
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="js/assets/jquery-1.9.1.js"></script>
+    <script src="js/assets/jquery-ui.js"></script>
+    <script src="js/assets/bootstrap.min.js"></script>
+
+    <!-- Viz libraries -->
+   <script type="text/javascript" src="js/assets/d3.v3.min.js"></script>
+    <script type="text/javascript" src="js/assets/queue.v1.min.js"></script>
+     <script src="js/assets/underscore-min.js"></script>
+     <script src="js/assets/colorbrewer.v1.min.js"></script>
+  
+  <!-- Viz scripts -->
+   <script type="text/javascript" src="js/viz/global_functions.js"></script>
+   <script type="text/javascript" src="js/viz/national_gap_line_chart.js"></script>
+   <script type="text/javascript" src="js/viz/national_score_line_chart.js"></script>
+   <script type="text/javascript" src="js/viz/bar_chart.js"></script>
+  <script type="text/javascript" src="js/viz/line_chart.js"></script>
+  <script type="text/javascript" src="js/viz/scatter.js"></script>
+    <script type="text/javascript" src="js/viz/resid_map.js"></script>
+
+  </body>
+</html>
